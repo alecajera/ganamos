@@ -1,0 +1,643 @@
+.oswald{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .pacifico-regular {
+      font-family: "Pacifico", cursive;
+      font-weight: 400;
+      font-style: normal;
+  }
+  
+  body{
+      margin: 0 !important;
+      padding: 0;
+      background-color: black !important;
+  }
+  .container-nobs{
+      background-image: url(imagenes/lasvegas.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 30%;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      z-index: 1;
+  }
+
+  /*
+  .testimonios-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+  }
+  .scrolling-text-container {
+      position: absolute;
+      top: 4rem;
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      background-color: #f4f4f4;
+      z-index: 50;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-color: rgb(218, 20, 20);
+      border-radius: 0.4rem;
+      padding: 0.3rem;
+      background-color: rgb(218, 20, 20);
+      font-family: Oswald;
+  
+      background: linear-gradient(
+      45deg,
+      #FF0000, #FF7300, #FF0000
+      );
+      background-size: 600%;
+      animation: glowing 20s linear infinite;
+      transition: opacity .3s ease-in-out;
+      border-radius: 10px;
+  }
+  
+  /* Animación del texto 
+  .scrolling-text {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scrollText 10s linear infinite;
+  }
+  .testimonials-button {
+      cursor: pointer;
+      position: absolute;
+      top: 5.15rem;
+      display: block;
+      width: 200px;
+      margin: 20px auto 0;
+      padding: 10px;
+      text-align: center;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      z-index: 56;
+  }
+  
+  .testimonials-button:hover {
+      background-color: #45a049;
+      
+  }
+  
+  /* Definir la animación 
+  @keyframes scrollText {
+      0% {
+          transform: translateX(100%);
+      }
+      100% {
+          transform: translateX(-100%);
+      }
+  }*/
+  
+  .contenido{
+      width: 100%;
+      height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      z-index: 50;
+  }
+  .banners{
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .banners img{
+      width: 30%;
+      height: 30%;
+  }
+  .titulo-principal h1{
+      font-family: Metropolis;
+      font-size: 5rem;
+      font-style: sans-serif;
+      text-shadow:
+      5px 5px 0 #000,
+      -5px 5px 0 #000,
+      -5px -5px 0 #000,
+      5px -5px 0 #000;
+      padding: 0;
+      margin: 0;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      animation: pulse 0s infinite ease-in-out alternate;
+  }
+  .texto-principal{
+      font-family: Oswald;0
+      font-size: 1.5rem;
+      opacity: 100%;
+      width: 95%;
+      animation: fade-up1 1s;
+  }
+  .texto-principal span{
+      color: rgb(42, 211, 42);
+      text-shadow: 0 0 10px rgba(126, 246, 156, 0.5),
+                   0 0 20px rgba(102, 247, 138, 0.5),
+                   0 0 40px rgba(34, 251, 89, 0.5),
+                   0 0 80px rgba(34, 251, 89, 0.5),
+                   0 0 160px rgba(34, 251, 89, 0.5);
+  
+  }
+  .boton{
+      animation: fade-up1 1s;
+      margin-top: 0.5rem;
+  }
+  .boton a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .boton a{
+      color: white;
+      cursor: pointer;
+      font-size: 2.2rem;
+      text-decoration: none;
+      border-color: rgb(214, 147, 53);
+      border-radius: 0.4rem;
+      padding: 0.8rem;
+      /*border-radius: 5rem;*/
+      background-color: rgb(218, 20, 20);
+      font-family: Oswald;
+  
+      background: linear-gradient(
+      45deg,
+      #d69335, #FF7300,
+      /*#00FFD5, #002BFF, #FF00C8,*/ #d69335
+      );
+      background-size: 600%;
+      animation: glowing 20s linear infinite;
+      transition: opacity .3s ease-in-out;
+      border-radius: 10px;
+  }
+    
+  .boton a p{
+      padding: 0;
+      margin: 0;
+  }
+  .contenedor-info{
+      cursor: pointer;
+      margin-top: 5rem;
+      bottom: 0;
+      background: linear-gradient(to top, #121212 0%, #121212 50%, #121212 80%, rgba(18, 18, 18, 0) 100%);
+      position: fixed;
+      display: flex;
+      height: 9rem;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      text-decoration: none;
+      color: white;
+      z-index: 55 !important;
+  }
+  .contenedor-info p{
+      padding: 0;
+      margin: 0;
+  }
+  
+  /*SEGUNDO CONTENEDOR*/
+  /*SEGUNDO CONTENEDOR*/
+  /*SEGUNDO CONTENEDOR*/
+  
+  .contenido-extra{
+      width: 100%;
+      height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      z-index: 50;
+  }
+  .imagenes-beneficios{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1rem;
+  }
+  .contenedor-imagen{
+      max-width: 4rem;
+      font-family: Oswald;
+      font-size: 0.8rem;
+  }
+  .p-gradient{
+      background: linear-gradient(
+  135deg,#ffd700,#ffa500,#ff4500,#ff6347,#ff69b4,#9400d3,#1e90ff,#00ced1);
+      background-clip: text;
+      background-size: 300% 300%;
+      -webkit-text-fill-color: transparent;
+      animation: gradient 8s ease-in-out infinite;
+  }
+  
+  .elemento-animado {
+      opacity: 0; /* Oculto inicialmente */
+    }
+    
+  .elemento-animado.animate {
+      opacity: 1;
+      animation-name: fade-up1; /* Nombre del keyframe */
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+  }
+  
+  /**KEY FRAMES START**/
+  
+  @keyframes bouncy{
+      100% {
+          top: -20px;
+      }
+  }
+  @keyframes glowing {
+      0% {background-position: 0 0;}
+      50% {background-position: 400% 0;}
+      100% {background-position: 0 0;}
+  }
+  @keyframes pulse {
+      from {scale: 1;}
+      to{scale: 0.9;}
+  }
+  @keyframes moveArrow {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px); /* Mueve la flecha hacia arriba */
+      }
+      100% {
+        transform: translateY(0); /* Vuelve a la posición original */
+      }
+  }
+  @keyframes fade-up1 {
+      0% {
+          opacity: 0;
+          transform: translateY(-30px) scale(0.9)
+      }
+      100% {
+          opacity: 1;
+          transform: translateY(0px) scale(1);
+      }
+  }
+  @keyframes gradient{
+      0%{
+          background-position: 0% 50%;
+      }
+      50%{
+          background-position: 100% 50%;
+      }
+      100%{
+          background-position: 0% 50%;
+      }
+  }
+  
+  /**KEY FRAMES END**/
+  
+  @media screen and (max-width: 900px){
+      .banners img{
+          width: 60%;
+          height: 60%;
+      }
+      .testimonio-img{
+          width: 100% !important;
+          height: auto;
+      }
+      .modal-content{
+          max-width: 65% !important;
+          height: auto;
+      }
+  }
+  @media screen and (max-width: 450px){
+      .container-nobs{
+          background-image: url(imagenes/vertical.png);
+          /*background-size: cover;
+          background-repeat: no-repeat;
+          opacity: 20%;
+          width: 100%;
+          height: 100vh;
+          position: absolute;
+          z-index: 1;*/
+      }
+  }
+  
+  .bottom-bar{
+      background-color: #eee;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-top: 20em;
+      max-width: 30em;
+      border-radius: 20px 20px 0 0;
+  }
+  .icon{
+      font-size: 1.5em;
+      padding: .5em;
+      margin: .1em;
+      margin-top: 0;
+      margin-bottom: 0;
+      transition: .5s ease-in-out;
+      border-radius: 100%;
+      border: 7px solid #333333;
+  }
+  .active1{
+      transform: scale(1.25) translateY(-1em);
+      background: linear-gradient(135deg, #23f,#6589ff);
+      border: 7px solid #333333;
+      color: white;
+  }
+  .fixed-flex{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  ion-icon{
+      color: white;
+  }
+  .anchor-texts{
+      text-decoration: none;
+      display: inline-block;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .anchor-texts p{
+      font-size: 0.7rem;
+      color: white;
+      display: block;
+      margin-bottom: 1rem;
+  }
+  
+  
+  #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #0A051C; /* Color negro grisáceo */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000; /* Z-index alto para asegurar que cubra todo */
+  }
+  
+  #loading-screen h1 {
+  
+      animation: blink 2s infinite; /* Animación de parpadeo */
+  }
+  
+  @keyframes blink {
+      0%, 50%, 100% {
+          opacity: 1;
+      }
+      25%, 75% {
+          opacity: 0;
+      }
+  }
+  
+  /* Estilo para que el carrusel tenga un tamaño máximo y sea responsive */
+  .carousel-item img {
+      max-height: 50vh; /* Ajusta la altura máxima del carrusel */
+      object-fit: contain; /* Ajusta la imagen sin que se deforme */
+      width: 100%;
+    }
+  .carousel-container {
+      overflow: hidden;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    outline: none !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+  }
+  .carousel-control-prev {
+      left: -5%;
+  }
+  .carousel-control-next {
+      right: -5%;
+  }
+  .titulo-juegos h2{
+      font-family: Metropolis, sans-serif;
+      font-size: 3rem;
+      /*font-style: italic;*/
+      text-shadow:
+      5px 5px 0 #000,
+      -5px 5px 0 #000,
+      -5px -5px 0 #000,
+      5px -5px 0 #000;
+      padding: 0;
+      margin: 0;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      animation: pulse 0s infinite ease-in-out alternate;
+  }
+  
+  .testimonios-section {
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .testimonios-title {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+    
+    .testimonios-grid {
+      width: 50%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
+      align-items: center;
+    }
+    
+    .testimonio-img {
+      height: auto;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      justify-self: center;
+    }
+    
+    .testimonio-img:hover {
+      transform: scale(1.05);
+    }
+    
+    /* Modal styles */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .modal-content {
+      max-width: 15%;
+      height: auto;
+    }
+    
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .caption {
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    
+    .testimonios-texto {
+      margin-top: 20px;
+      padding-bottom: 100px; /* Ensure nothing is covered by the bottom navigation bar */
+    }
+  
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      width: 100%;
+      max-width: 1200px;
+      padding-bottom: 0;
+  }
+  
+  .card1 {
+      background-color: rgba(255, 255, 255, 0.0);
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: left;
+      width: 100%;
+      max-width: 400px;
+      transition: transform 0.3s ease;
+      text-decoration: none;
+      color: white;
+  }
+  
+  .card1:hover {
+      transform: translateY(-10px);
+  }
+  
+  .card1 img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px 10px 0 0;
+  }
+  
+  .card1 h3 {
+      padding: 15px;
+      font-size: 1.2rem;
+      transition: text-decoration 0.3s ease;
+      text-align: left;
+      color: white;
+  }
+  
+  .card1 h3:hover {
+      text-decoration: underline;
+  }
+  
+  @media (min-width: 768px) {
+      .card1 {
+          flex: 1 1 calc(50% - 20px); /* Asegurar 2 cartas por fila */
+          max-width: 250px; /* Cartas más pequeñas en pantallas grandes */
+      }
+  }
+  
+  @media (max-width: 767px) {
+      .card1 {
+          flex: calc(50% - 20px); /* One card per row on smaller screens */
+      }
+  }
+  
+  
+  
+  @media only screen and (max-width: 767px) and (orientation: landscape) {
+      .card1{
+          max-width: 116px;
+      }
+      .testimonio-img{
+          width: 29% !important;
+      }
+      .p-gradient{
+          font-size: 2rem !important;
+      }
+      .titulo-juegos{
+          margin-bottom: 0 !important;
+      }
+    }
+  @media only screen and (min-width: 480px) and (max-width: 1024px) and (orientation: landscape) {
+      .card1{
+          max-width: 116px;
+      }
+      .testimonio-img{
+          width: 29% !important;
+      }
+      .p-gradient{
+          font-size: 2rem !important;
+      }
+      .titulo-juegos{
+          margin-bottom: 0 !important;
+      }
+    }
+
+    /* Estilo inicial del navbar */
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  /* Estilo del navbar cuando se hace scroll */
+  .navbar.scrolled {
+    background-color: rgb(2, 58, 141); /* Cambia este color al que desees */
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  /* Estilo de los enlaces dentro del navbar */
+  .navbar .navbar-nav .nav-link {
+    color: #ffffff; /* Color blanco */
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Estilo de los enlaces activos dentro del navbar */
+  .navbar .navbar-nav .nav-link.active {
+    /* color: #97dacb;  */
+    color: orange; 
+  }
+  
+  /* Estilo del texto del navbar-brand */
+  .navbar .navbar-brand {
+    color: #ffffff; /* Color blanco */
+    font-size: 25px;
+    font-weight: bold;
+  }
