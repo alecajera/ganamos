@@ -79,9 +79,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });*/
 
 // Redirigir después de X segundos
-setTimeout(function() {
-window.location.href = "https://wa.link/1gd5o9";
-}, 1); 
+//setTimeout(function() {
+//window.location.href = "https://wa.link/1gd5o9";
+//}, 1); 
 
 
 
